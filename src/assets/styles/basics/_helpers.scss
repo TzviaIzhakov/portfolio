@@ -23,6 +23,9 @@
 .gap14 {
 	gap: rem(14px);
 }
+.gap7 {
+	gap: rem(7px);
+}
 
 // flex helpers
 
@@ -37,6 +40,9 @@
 	}
 	&.justify-center {
 		justify-content: center;
+	}
+	&.justify-space-between {
+		justify-content: space-between;
 	}
 	&.align-center {
 		align-items: center;

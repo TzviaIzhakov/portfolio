@@ -1,49 +1,52 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-    font-family: Macan;
-    line-height: 1.6;
+	font-family: Macan;
+	line-height: rem(27px);
 }
 
 body {
-    font-size: rem(18px);
-    margin: 0;
+	font-size: rem(18px);
+	// background-color: $clr2;
+	margin: 0;
 }
 
 main.main-layout {
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 0.6em;
-    line-height: 1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.6em;
+	line-height: 1;
 }
 
-button{
-    padding: 5px 10px;
-    cursor: pointer;
-    background: transparent;
+button {
+	padding: 5px 10px;
+	cursor: pointer;
+	background: transparent;
 }
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
 p {
-    margin: 0 0 1em;
+	margin: 0 0 1em;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    &:hover{
-        text-decoration: underline;
-    }
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
 }
 
-ul{
-    padding: 0;
+ul {
+	padding: 0;
 }

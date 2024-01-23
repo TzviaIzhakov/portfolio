@@ -1,0 +1,28 @@
+.header-wrapper {
+	padding-block: rem(20px);
+	background-color: $clr2;
+	position: sticky;
+	top: 0;
+	.header {
+		.logo-container {
+			gap: rem(15px);
+			.logo {
+				width: 3em;
+			}
+		}
+		.firstname-job {
+			font-weight: 700;
+			color: white;
+		}
+		.list {
+			gap: rem(30px);
+			.list-item a {
+				color: $clr1;
+				font-weight: 700;
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+}
