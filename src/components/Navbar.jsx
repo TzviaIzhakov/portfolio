@@ -9,13 +9,13 @@ export function Navbar() {
 				</div>
 				<nav className='list clean-list flex'>
 					<li className='list-item'>
-						<a href='#'>About</a>
+						<a href='#about'>About</a>
 					</li>
 					<li className='list-item'>
-						<a href='#'>Projects</a>
+						<a href='#projects'>Projects</a>
 					</li>
 					<li className='list-item'>
-						<a href='#'>Contact</a>
+						<a href='#contact'>Contact</a>
 					</li>
 				</nav>
 			</header>

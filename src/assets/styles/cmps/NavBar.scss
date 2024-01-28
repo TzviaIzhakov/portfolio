@@ -3,6 +3,7 @@
 	background-color: $clr2;
 	position: sticky;
 	top: 0;
+	margin-block-end: rem(64px);
 	.header {
 		.logo-container {
 			gap: rem(15px);
