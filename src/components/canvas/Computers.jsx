@@ -19,8 +19,14 @@ function Computers() {
 export function ComputerCanvas() {
 	return (
 		<Suspense fallback={<Loader />}>
-			<Canvas frameloop='demand' shadows dpr={[1, 2]} camera={{ position: [20, 3, 5], fov: 25 }} gl={{ preserveDrawingBuffer: true }}>
-				{' '}
+			<Canvas
+				style={{ width: '100%', height: '100%' }}
+				frameloop='demand'
+				shadows
+				dpr={[1, 2]}
+				camera={{ position: [20, 3, 5], fov: 25 }}
+				gl={{ preserveDrawingBuffer: true }}
+			>
 				<OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
 				<Computers />
 			</Canvas>

@@ -14,7 +14,7 @@ export function Hero() {
 					</h1>
 				</div>
 				<p className='introduction-content'>I Develop FullStack applications that blend functionality with a seamless user experience.</p>
-				<div style={{ width: '50vw', margin: '0 auto', height: '50vh', position: 'relative' }} className='computer-wrapper'>
+				<div style={{ width: '100%', margin: '0 auto', height: '400px', position: 'relative' }} className='computer-wrapper'>
 					<ComputerCanvas />
 					<a href='#about'>
 						<div className='scroll-down-wrapper'>
