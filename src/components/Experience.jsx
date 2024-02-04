@@ -5,7 +5,7 @@ import experiences from '../demo-data/experience';
 import 'react-vertical-timeline-component/style.min.css';
 function ExperienceCard({ experience }) {
 	return (
-		<section>
+		<section className='timeline-container'>
 			<VerticalTimelineElement
 				contentStyle={{
 					background: '#1d1836',
@@ -16,7 +16,7 @@ function ExperienceCard({ experience }) {
 				iconStyle={{ background: experience.iconBg }}
 				icon={
 					<div>
-						<img src={experience.icon} alt={experience.companyName} />
+						<img className='experience-icon' src={experience.icon} alt={experience.companyName} />
 					</div>
 				}
 			>
@@ -25,7 +25,9 @@ function ExperienceCard({ experience }) {
 					<p className='experience-company-name'>{experience.companyName}</p>
 					<ul className='experience-points'>
 						{experience.points.map((p, index) => (
-							<li key={`experience-point-${index}`}>{p}</li>
+							<li key={`experience-point-${index}`} className='experience-point'>
+								{p}
+							</li>
 						))}
 					</ul>
 				</div>
@@ -38,7 +40,7 @@ export function Experience() {
 		<section className='experience-container main-layout'>
 			<div className='flex column align-center'>
 				<span className='experience-title-main'>Work Experience</span>
-				<h1 className='experience-sub-tile'>Experience.</h1>
+				<h1 className='experience-sub-tile'>Experience & Education.</h1>
 			</div>
 			<div className='experience-time-line'>
 				<VerticalTimeline>

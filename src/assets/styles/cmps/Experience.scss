@@ -14,17 +14,28 @@
 		color: white;
 	}
 	.experience-time-line {
-		.experience-details {
-			.experience-title {
-				color: white;
-				font-weight: 900;
-				font-size: rem(24px);
+		.timeline-container {
+			margin-block-end: rem(35px);
+			.experience-icon {
+				border-radius: 50%;
 			}
-			.experience-company-name {
-				color: $clr1;
-			}
-			.experience-points {
-				padding-inline-start: 1.25rem;
+			.experience-details {
+				.experience-title {
+					color: white;
+					font-weight: 900;
+					font-size: rem(24px);
+					margin-block-end: rem(5px);
+				}
+				.experience-company-name {
+					color: $clr1;
+					margin-block-start: 0px;
+				}
+				.experience-points {
+					padding-inline-start: 1.25rem;
+					.experience-point {
+						font-size: rem(14px);
+					}
+				}
 			}
 		}
 	}
