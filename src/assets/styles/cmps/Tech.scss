@@ -1,0 +1,10 @@
+.technologies-container {
+	margin-block-end: rem(100px);
+	.technologies {
+		gap: 4.5rem;
+		.technology {
+			width: 7em;
+			height: 7em;
+		}
+	}
+}
