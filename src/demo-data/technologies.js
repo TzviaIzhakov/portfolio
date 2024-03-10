@@ -1,26 +1,26 @@
-// import { javascript, typescript, html, css, reactjs, redux, nodejs, mongodb, git, sass } from '../assets';
 import javascript from '../assets/img/tech/javascript.png';
 import typescript from '../assets/img/tech/typescript.png';
-import html from '../assets/img/tech/html.png';
-import css from '../assets/img/tech/css.png';
-import reactjs from '../assets/img/tech/reactjs.png';
-import redux from '../assets/img/tech/redux.png';
-import nodejs from '../assets/img/tech/nodejs.png';
-import mongodb from '../assets/img/tech/mongodb.png';
-import git from '../assets/img/tech/git.png';
-import sass from '../assets/img/tech/sass.png';
+import htmlImg from '../assets/img/tech/html.png';
+import cssImg from '../assets/img/tech/css.png';
+import reactjsImg from '../assets/img/tech/reactjs.png';
+import reduxImg from '../assets/img/tech/redux.png';
+import nodejsImg from '../assets/img/tech/nodejs.png';
+import mongodbImg from '../assets/img/tech/mongodb.png';
+import gitImg from '../assets/img/tech/git.png';
+import sassImg from '../assets/img/tech/sass.png';
+
 const technologies = [
 	{
 		name: 'HTML 5',
-		icon: html,
+		icon: htmlImg,
 	},
 	{
 		name: 'CSS 3',
-		icon: css,
+		icon: cssImg,
 	},
 	{
 		name: 'SASS',
-		icon: sass,
+		icon: sassImg,
 	},
 	{
 		name: 'JavaScript',
@@ -32,23 +32,24 @@ const technologies = [
 	},
 	{
 		name: 'React JS',
-		icon: reactjs,
+		icon: reactjsImg,
 	},
 	{
 		name: 'Redux Toolkit',
-		icon: redux,
+		icon: reduxImg,
 	},
 	{
 		name: 'Node JS',
-		icon: nodejs,
+		icon: nodejsImg,
 	},
 	{
 		name: 'MongoDB',
-		icon: mongodb,
+		icon: mongodbImg,
 	},
 	{
 		name: 'git',
-		icon: git,
+		icon: gitImg,
 	},
 ];
+
 export default technologies;
