@@ -1,0 +1,62 @@
+.project-card-container {
+	height: 4em;
+	padding: rem(20px);
+	border-radius: 20px;
+
+	.project-card {
+		width: em(360px);
+		padding: 1.25rem;
+		background-color: $clr4;
+		border-radius: 1rem;
+		row-gap: rem(10px);
+	}
+
+	.project-img-container {
+		position: relative;
+	}
+
+	.project-img {
+		border-radius: 0.5em;
+		object-fit: 'cover';
+	}
+
+	.github {
+		position: absolute;
+		right: 5px;
+		top: 4px;
+		width: 2em;
+		height: 2em;
+		background: linear-gradient(to right, #434343, black);
+		border-radius: 50%;
+		padding: rem(7px);
+	}
+
+	.project-name {
+		color: white;
+		font-size: rem(24px);
+		font-weight: 700;
+	}
+
+	.project-description {
+		font-size: rem(14px);
+		color: $clr1;
+	}
+
+	.tags-container {
+		column-gap: rem(5px);
+		flex-wrap: wrap;
+		font-size: 14px;
+
+		.tag-blue-text-gradient {
+			color: #4288ea;
+		}
+
+		.tag-green-text-gradient {
+			color: #f42167;
+		}
+
+		.tag-pink-text-gradient {
+			color: #25c486;
+		}
+	}
+}

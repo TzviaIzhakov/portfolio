@@ -1,0 +1,17 @@
+.project-container {
+	.project-title-main {
+		font-size: rem(14px);
+		letter-spacing: rem(0.7px);
+		line-height: rem(21px);
+		text-transform: uppercase;
+		color: $clr1;
+	}
+
+	.project-sub-tile {
+		font-size: rem(40px);
+		font-weight: 900;
+		line-height: rem(60px);
+		letter-spacing: 0.1em;
+		color: white;
+	}
+}
