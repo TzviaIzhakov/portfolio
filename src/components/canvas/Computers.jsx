@@ -1,4 +1,5 @@
-import { Suspense, useEffect, useState } from 'react';
+/* eslint-disable react/no-unknown-property */
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
@@ -6,6 +7,7 @@ import { Loader } from '../Loader';
 
 function Computers() {
 	const computer = useGLTF('../../../public/desktop_pc/scene.gltf');
+
 	return (
 		<mesh>
 			<hemisphereLight intensity={0.15} groundColor='black' />
