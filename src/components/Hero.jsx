@@ -42,6 +42,7 @@ const Hero = () => {
 
 			<div style={{ width: '100%', margin: '0 auto', height: '400px', position: 'relative' }} className='computer-wrapper'>
 				<ComputerCanvas />
+
 				<a href='#about'>
 					<div className='scroll-down-wrapper'>
 						<motion.div
