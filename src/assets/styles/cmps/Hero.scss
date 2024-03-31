@@ -1,5 +1,11 @@
 .hero-wrapper {
 	margin-block-end: rem(100px);
+	background-image: url('https://www.salemcyber.pro/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fherobg.a195f15f.png&w=3840&q=75');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-block-start: rem(140px);
+
 	.typewriter .introduction-header {
 		overflow: hidden;
 		white-space: nowrap;
@@ -7,6 +13,7 @@
 		font-size: 5rem;
 		font-weight: 700;
 		color: white;
+
 		.first-name {
 			color: $clr3;
 		}
@@ -26,6 +33,7 @@
 		font-size: 1.5rem;
 		line-height: rem(35px);
 	}
+
 	.computer-wrapper {
 		.scroll-down-wrapper {
 			border-radius: rem(24px);
@@ -35,6 +43,7 @@
 			position: absolute;
 			bottom: 0;
 			right: 50%;
+
 			.rounded-dot {
 				background-color: $clr1;
 				border-radius: 50%;
