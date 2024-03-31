@@ -19,7 +19,8 @@ const projects = [
 			},
 		],
 		image: sixerrImg,
-		source_code_link: 'https://github.com/razamsalem/Sixerr',
+		sourceCodeLink: 'https://github.com/razamsalem/Sixerr',
+		application: 'https://sixerr.onrender.com/',
 	},
 ];
 
