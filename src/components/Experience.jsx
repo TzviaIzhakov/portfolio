@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
+import 'react-vertical-timeline-component/style.min.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 
 import experiences from '../demo-data/experience';
-
-import 'react-vertical-timeline-component/style.min.css';
 
 function ExperienceCard({ experience }) {
 	return (
@@ -38,9 +37,9 @@ function ExperienceCard({ experience }) {
 	);
 }
 
-export function Experience() {
+const Experience = () => {
 	return (
-		<section className='experience-container main-layout'>
+		<section className='experience-container main-layout' id='work'>
 			<div className='flex column align-center'>
 				<span className='experience-title-main'>Work Experience</span>
 				<h1 className='experience-sub-tile'>Experience & Education.</h1>
@@ -54,4 +53,6 @@ export function Experience() {
 			</div>
 		</section>
 	);
-}
+};
+
+export default Experience;
