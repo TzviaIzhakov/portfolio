@@ -9,7 +9,7 @@ const experiences = [
 		companyName: 'Daily English',
 		icon: dailyEnglishLogo,
 		iconBg: '#383E56',
-		date: 'Nov 2023 - PRESENT',
+		date: 'Nov 2023 - Mar 2024',
 		points: [
 			'Daily English is a crafted application aimed at enhancing English proficiency, featuring a blend of English podcasts and language assignments',
 			'Addressing and fixing UI and functionality bugs within the application',
@@ -23,7 +23,7 @@ const experiences = [
 		companyName: 'IDF',
 		icon: idfLogo,
 		iconBg: '#383E56',
-		date: 'Nov 2023 - PRESENT',
+		date: 'Oct 2019 - Oct 2022',
 		points: [
 			'Timely handling and investigating network faults in critical systems',
 			'Managed coordination between organizations and senior officials under high-pressure situations, ensuring the safety of human life that depended on these systems within strict time constraints',
@@ -40,7 +40,7 @@ const experiences = [
 		companyName: 'Coding Academy',
 		icon: codingAcademyLogo,
 		iconBg: '#383E56',
-		date: 'Nov 2023 - PRESENT',
+		date: 'Jul 2023 - Dec 2023',
 		points: [
 			'Completed intense 640-hour bootcamp, inspired by the Mamram unit of the IDF, with a focus on the MERN stack',
 			'Specialized in the following technologies: HTML, SASS, JS, Angular, React, Vue, AJAX, Redux, Restful APIs, Node.js, Express.js, MongoDB, MySQL',
