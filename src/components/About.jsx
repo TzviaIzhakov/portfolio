@@ -1,6 +1,6 @@
-export function About() {
+const About = () => {
 	return (
-		<section className='about-wrapper main-layout'>
+		<section className='about-wrapper main-layout' id='about'>
 			<span className='about-title-main'>Introduction</span>
 			<h1 className='about-title-sub'>Overview.</h1>
 			<p className='about-content'>
@@ -9,6 +9,6 @@ export function About() {
 			</p>
 		</section>
 	);
-}
+};
 
 export default About;
