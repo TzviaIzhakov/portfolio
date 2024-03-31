@@ -1,5 +1,3 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-
 import useHeader from './custom-hooks/useHeader';
 import HeaderContext from './contexts/HeaderContext';
 
@@ -15,19 +13,17 @@ function App() {
 	const headerBackground = useHeader();
 
 	return (
-		<Router>
-			<main className='app'>
-				<HeaderContext.Provider value={headerBackground}>
-					<Navbar />
-					<Hero />
-				</HeaderContext.Provider>
-				<About />
-				<Experience />
-				<Tech />
-				<Contact />
-				<Projects />
-			</main>
-		</Router>
+		<main className='app'>
+			<HeaderContext.Provider value={headerBackground}>
+				<Navbar />
+				<Hero />
+			</HeaderContext.Provider>
+			<About />
+			<Experience />
+			<Tech />
+			<Projects />
+			<Contact />
+		</main>
 	);
 }
 
