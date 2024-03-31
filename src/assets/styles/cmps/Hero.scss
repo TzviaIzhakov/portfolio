@@ -17,6 +17,10 @@
 		.first-name {
 			color: $clr3;
 		}
+
+		@include for-mobile-layout {
+			font-size: 2.5rem;
+		}
 	}
 
 	@keyframes typing {
@@ -32,6 +36,10 @@
 		color: white;
 		font-size: 1.5rem;
 		line-height: rem(35px);
+
+		@include for-mobile-layout {
+			font-size: 1rem;
+		}
 	}
 
 	.computer-wrapper {

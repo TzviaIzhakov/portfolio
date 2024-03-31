@@ -1,14 +1,18 @@
 .project-card-container {
-	height: 4em;
 	padding: rem(20px);
 	border-radius: 20px;
+	margin-block-end: 6.25rem;
 
 	.project-card {
-		width: em(360px);
+		width: em(350px);
 		padding: 1.25rem;
 		background-color: $clr4;
 		border-radius: 1rem;
 		row-gap: rem(10px);
+
+		@include for-xs-mobile-layout {
+			width: 100%;
+		}
 	}
 
 	.project-img-container {
