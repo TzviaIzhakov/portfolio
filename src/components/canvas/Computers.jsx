@@ -22,7 +22,7 @@ export function ComputerCanvas() {
 	return (
 		<Suspense fallback={<Loader />}>
 			<Canvas
-				style={{ width: '100%', height: '100%' }}
+				style={{ width: '98%', height: '100%' }}
 				frameloop='demand'
 				shadows
 				dpr={[1, 2]}
