@@ -43,6 +43,9 @@
 	}
 
 	.computer-wrapper {
+		height: 30vw;
+		position: relative;
+
 		.scroll-down-wrapper {
 			border-radius: rem(24px);
 			height: rem(70px);
@@ -52,11 +55,20 @@
 			bottom: 0;
 			right: 50%;
 
-			.rounded-dot {
-				background-color: $clr1;
-				border-radius: 50%;
-				margin: 0px 0px 4px;
-				border: 7px solid $clr1;
+			@include for-mobile-layout {
+				height: rem(52px);
+				border-radius: rem(25px);
+			}
+		}
+
+		.rounded-dot {
+			background-color: $clr1;
+			border-radius: 50%;
+			margin: 0px 0px 4px;
+			border: 7px solid $clr1;
+
+			@include for-mobile-layout {
+				border: 4px solid $clr1;
 			}
 		}
 	}
