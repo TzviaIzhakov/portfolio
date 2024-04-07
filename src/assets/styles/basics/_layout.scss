@@ -1,6 +1,6 @@
 .main-layout {
 	display: grid;
-	grid-template-columns: minmax(12px, 1fr) minmax(auto, $xs-mobile-breakpoint) minmax(12px, 1fr);
+	grid-template-columns: minmax(20px, 1fr) minmax(auto, $mobile-breakpoint) minmax(20px, 1fr);
 
 	> *.full {
 		grid-column: 1 / -1;
@@ -10,22 +10,51 @@
 		grid-column: 2;
 	}
 
-	@include for-narrow-layout {
+	@include for-mobile-layout {
 		grid-template-columns:
 			minmax(20px, 1fr)
 			minmax(auto, $mobile-breakpoint) //510px
 			minmax(20px, 1fr);
 	}
+
+	@include for-narrow-layout {
+		grid-template-columns:
+			minmax(20px, 1fr)
+			minmax(auto, $narrow-breakpoint) //510px
+			minmax(20px, 1fr);
+	}
+
 	@include for-normal-layout {
 		grid-template-columns:
 			minmax(20px, 1fr)
-			minmax(auto, $narrow-breakpoint) //720px
+			minmax(auto, $normal-breakpoint) //720px
 			minmax(20px, 1fr);
 	}
+
 	@include for-wide-layout {
 		grid-template-columns:
 			minmax(20px, 1fr)
-			minmax(auto, $normal-breakpoint) //960px
+			minmax(auto, $wide-breakpoint) //920px
 			minmax(20px, 1fr);
+	}
+
+	@include for-l-wide-layout {
+		grid-template-columns:
+			minmax(20px, 1fr)
+			minmax(auto, $xl-breakpoint) //1230px
+			minmax(20px, 1fr);
+	}
+}
+
+.contact-layout {
+	@include for-narrow-layout {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@include for-wide-layout {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: rem(12px);
 	}
 }
