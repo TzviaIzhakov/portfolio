@@ -54,27 +54,26 @@ const Contact = () => {
 
 	return (
 		<section className='contact-container main-layout' id='contact'>
-			<motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='earth-container'>
-				<EarthCanvas />
-			</motion.div>
+			<div className='contact-layout'>
+				<motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='earth-container '>
+					<EarthCanvas />
+				</motion.div>
 
-			<motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='contact-form-container flex column'>
-				<span className='contact-title-main'>Get in touch</span>
-				<h1 className='contact-sub-tile'>Contact.</h1>
+				<motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='contact-form-container flex column'>
+					<span className='contact-title-main'>Get in touch</span>
+					<h1 className='contact-sub-tile'>Contact.</h1>
 
-				<form onSubmit={onSubmit} ref={formRef} className='contact-form flex column'>
-					<label htmlFor='fullName'>Your Name</label>
-					<input type='text' placeholder='Please enter your full name' name='fullName' value={filterBy.fullName} onChange={handleChange} />
-
-					<label htmlFor='email'>Your Email</label>
-					<input type='email' placeholder='Please enter your full email' name='email' value={filterBy.email} onChange={handleChange} />
-
-					<label htmlFor='msg'>Your Message</label>
-					<textarea rows={7} placeholder='What do you what to say' name='msg' value={filterBy.msg} onChange={handleChange} />
-
-					<button className='btn-submit'> {loading ? 'Sending...' : 'Send'}</button>
-				</form>
-			</motion.div>
+					<form onSubmit={onSubmit} ref={formRef} className='contact-form flex column'>
+						<label htmlFor='fullName'>Your Name</label>
+						<input type='text' placeholder='Please enter your full name' name='fullName' value={filterBy.fullName} onChange={handleChange} />
+						<label htmlFor='email'>Your Email</label>
+						<input type='email' placeholder='Please enter your full email' name='email' value={filterBy.email} onChange={handleChange} />
+						<label htmlFor='msg'>Your Message</label>
+						<textarea rows={7} placeholder='What do you what to say' name='msg' value={filterBy.msg} onChange={handleChange} />
+						<button className='btn-submit'> {loading ? 'Sending...' : 'Send'}</button>
+					</form>
+				</motion.div>
+			</div>
 		</section>
 	);
 };

@@ -37,12 +37,9 @@ const Hero = () => {
 					{"Hi, I'm"} <span className='first-name'>Tzvia</span>
 				</h1>
 			</div>
-
 			<p className='introduction-content'>I Develop FullStack applications that blend functionality with a seamless user experience.</p>
-
-			<div style={{ width: '100%', margin: '0 auto', height: '400px', position: 'relative' }} className='computer-wrapper'>
+			<div className='computer-wrapper flex justify-center'>
 				<ComputerCanvas />
-
 				<a href='#about'>
 					<div className='scroll-down-wrapper'>
 						<motion.div
